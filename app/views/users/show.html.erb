@@ -1,5 +1,8 @@
 <%= @user.username %><br />
 <%= @user.email %>
 
-<%= button_to "logout", session_path, method: :delete %>
+<% if logged_in? %>
+	<%= button_to "logout", session_path, method: :delete %>
+<% end %>
+<br />
 <%= link_to "home", root_path %>
