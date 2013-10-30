@@ -1,0 +1,11 @@
+development:
+  adapter: postgresql
+  database: taylor_nat_railz_dev
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: taylor_nat_railz_test
+  pool: 5
+  timeout: 5000

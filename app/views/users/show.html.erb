@@ -1,0 +1,5 @@
+<%= @user.username %><br />
+<%= @user.email %>
+
+<%= button_to "logout", session_path, method: :delete %>
+<%= link_to "home", root_path %>
